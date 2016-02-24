@@ -7,6 +7,7 @@ A small library providing a wrapper for [api.email-validator.net](http://www.ema
   Download zip, extract and embed `jquery.email-validator-net.js` to your HTML.
   This Plugin needs jQuery!
 ## Usage
+See test.js and test.html
   ```js
   // Init only once
   $.validatePhone(APIKEY);
