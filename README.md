@@ -10,11 +10,11 @@ A small library providing a wrapper for [api.email-validator.net](http://www.ema
 See test.js and test.html
   ```js
   // Init only once
-  $.validatePhone(APIKEY);
+  $.validateEmail("ev-35f3931d458da40d5a3349e5498bb800");
 
   // OnClick
   $("#submit").click(function () {
-    $("#phone").validatePhone(function (response) {
+    $("#email").validateEmail(function (response) {
       console.log(response);
     })
   })
