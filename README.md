@@ -10,7 +10,7 @@ A small library providing a wrapper for [api.email-validator.net](http://www.ema
 See test.js and test.html
   ```js
   // Init only once
-  $.validateEmail("ev-35f3931d458da40d5a3349e5498bb800");
+  $.validateEmail("YOUR API KEY");
 
   // OnClick
   $("#submit").click(function () {
@@ -18,15 +18,15 @@ See test.js and test.html
       console.log(response);
     })
   })
-  
-  //response looks like that: 
-    { 
+
+  //response looks like that:
+    {
       status: 200,                      // ==> http://www.email-validator.net/email-verification-results.html
       info: "OK - Valid Address",       // ==> http://www.email-validator.net/email-verification-results.html
       details: "Looong description",    // ==> http://www.email-validator.net/email-verification-results.html
-      easyStatus: "VALID"               // VALID, SUSPECT or INVALID (to keep it simple)
+      simpleStatus: "VALID"               // VALID, SUSPECT or INVALID (to keep it simple)
     }
-    
+
   });
   ```
 
