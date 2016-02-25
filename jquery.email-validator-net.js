@@ -4,7 +4,6 @@
   $.validateEmail = function(apiKey){
     var apiKey = apiKey
     $.fn.validateEmail = function(cb) {
-      console.log(apiKey, baseUrl);
       var email = this.val();
       $.get(baseUrl + "?EmailAddress=" + email + "&APIKey=" + apiKey, $.proxy(function (res) {
         if (/2[0-9]{2}/g.test(res.status)) {
